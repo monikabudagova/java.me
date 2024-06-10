@@ -64,3 +64,7 @@ function calculator() {
     return this.a * this.b
   }
 }
+let calculator = new calculator()
+calculator.read()
+console.log(calculator.sum())
+console.log(calculator.nul())
