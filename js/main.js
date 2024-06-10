@@ -1,53 +1,66 @@
-// alert("Задание 1")
-//   let x = +prompt("Введите первое число для сравнения ")
-//   let y = +prompt("Введите второе число для сравнения ")
+// let salaries = {
+//   jon: 100,
+//   ann: 160,
+//   pete: 130
+// }
+// let hic = 0
+// salaries.mo = 430
+// for(let key in salaries){
+//   hic += salaries[key]
+// }
+// console.log(hic) //820
 
-//     function hic() {
-//     function Compare(a, b) {
-//       if (a < b) {
-//         return -1
-//       } else if (a > b) {
-//         return 1
-//       } else if (a == b) {
-//         return 0
-//       } else {
-//         return "Вы ошиблись при вводе чисел";
-//       }
-//     }
-  
-//     alert(Compare(x, y))
+
+// multiplyNumeric = (menu) => {
+//   console.log(menu);
+//   for(let key in menu) {
+//     if(typeof key == 'number') menu.key * 2
 //   }
-//     hic()
-  
+// }
+
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title:'my menu'
+// }
+
+// multiplyNumeric(menu)
+// console.log(menu)
 
 
-// function hic2() {
-//     function Factorial(n) {
-//       if (n == 1) return 1
-//       return n * Factorial(n - 1)
-//     }
-//     alert("Задание 2")
-//     let x = 1
-//     do {
-//       x = Math.trunc( +prompt("введите положительное число от 1: "))
-//     } while (x < 1)
-//     alert(Factorial(x))
-//   }
-//     hic2()
-    let a = 0
-    let b = 0
-    let c = 0
-function hic3() 
-{
-    function Splitter(a, b, c) {
-      return a * 100 + b * 10 + c;
-    }
-    alert("Задание 3")
-    do {
-      a = Math.trunc(Math.abs(+prompt("Введите первое число: ")))
-      b = Math.trunc(Math.abs(+prompt("Введите второе число: ")))
-      c = Math.trunc(Math.abs(+prompt("Введите третье число: ")))
-    } while (a > 9 || b > 9 || c > 9)
-    alert(Splitter(a, b, c))
+
+// function User(params) {
+//   this.name = params
+//   this.isAdmin = false
+
+// }
+// let user1 = new User('moniks')
+// let user2 = new User('valya')
+// let user3 = new User('lilio')
+// let user4 = new User('kara')
+
+
+
+// console.log(user1.name)//momniks
+// console.log(user2.name)//valya
+// console.log(user3.name)//lilio
+// console.log(user4.name)//kara
+
+// console.log(user1.isAdmin)//false
+// console.log(user2.isAdmin)//false
+// console.log(user3.isAdmin)//lilio
+// console.log(user4.isAdmin)//kara
+
+function calculator() {
+  this.read = function(a, b){
+  this.a = +prompt('первое')
+  this.b = +prompt('второе')
+  return a, b
+  },
+  this.sum = function(a, b){
+    return this.a + this.b
+  },
+  this.nul = function(a, b){
+    return this.a * this.b
   }
-  hic3()
+}
