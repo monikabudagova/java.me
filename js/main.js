@@ -51,20 +51,45 @@
 // console.log(user3.isAdmin)//lilio
 // console.log(user4.isAdmin)//kara
 
-function calculator() {
-  this.read = function(a, b){
-  this.a = +prompt('первое')
-  this.b = +prompt('второе')
-  return a, b
-  },
-  this.sum = function(a, b){
-    return this.a + this.b
-  },
-  this.nul = function(a, b){
-    return this.a * this.b
-  }
+// function calculator() {
+//   this.read = function(a, b){
+//   this.a = +prompt('первое')
+//   this.b = +prompt('второе')
+//   return a, b
+//   },
+//   this.sum = function(a, b){
+//     return this.a + this.b
+//   },
+//   this.nul = function(a, b){
+//     return this.a * this.b
+//   }
+// }
+// let calculator = new calculator()
+// calculator.read()
+// console.log(calculator.sum())
+// console.log(calculator.nul())
+
+let car = {
+  auto: 'марка',
+  model: 'модель',
+  year: 'год',
+  speed:'26'
 }
-let calculator = new calculator()
-calculator.read()
-console.log(calculator.sum())
-console.log(calculator.nul())
+function hiv(car) {
+  console.log(`прозводитель ${car.auto}, модель${car.model}, год${car.year}`)
+  
+}
+// let s = +prompt('время')
+function time(s) {
+  km2 = +prompt('расстояние')
+  m = km2 *1000 
+  mh = car.speed * 1000 / 3600
+
+  
+  t = s / mh
+  h = s - (h - 60)
+console.log(`${time} сколько часов`)
+}
+
+hiv(car)
+time(car)
