@@ -28,9 +28,13 @@
 
 
 
-function truncate(str, maxlenght){
-  console.log(str.substring(0, maxlenght) + '...')
+// function truncate(str, maxlenght){
+//   console.log(str.substring(0, maxlenght) + '...')
   
-}
-truncate('вот,кошуео аврашы о вощупоу пулкотул уптклвып ыкапм')
+// }
+// truncate('вот,кошуео аврашы о вощупоу пулкотул уптклвып ыкапм')
 
+let style = ['джас', 'блюз']
+style.push('рок-н-ролл')
+
+console.log(style)
