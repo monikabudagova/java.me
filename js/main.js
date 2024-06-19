@@ -1,40 +1,54 @@
-// let str = 'вася';
-// str = 'В' + str[1] + str[2] + str[3] 
-// console.log(str)
+// let arr = []
 
-// function ucFirst(str) {
-//   let str1 = str[0].toUpperCase()
-//   for(let i = 0;i <= str.leng;i++){
-//     str1 = str1 + str[i]
-//   }
-//   console.log(str1)
-
+// function  sumInput() {
+//     while (true) {
+//         let value = prompt('')
+//         if(value == null) {
+//             break
+//         } else if (isFinite(value)) {
+//             arr.push(value)
+//         }else break
+//     }
 // }
-// ucFirst('вася')
+
+// sumInput()
+
+// splice
+
+// let arr = ["Я", "изучаю", "JavaScript"]
+
+// arr.splice(0, 3, "Давай", "танцевать", "JavaScript")
+
+// console.log( arr )
+
+// let a =  ["Я", "изучаю", "JavaScript"]
+
+// let b = a.concat()
+
+// b[0] = 'мы'
 
 
+// console.log(a)
 
-// function checkSpam(str) {
-//   str = str.toLowerCase()
-//   if(~str.indexOf('viagra') || ~str.indexOf('xxx')){
-//     console.log(true)
-//   }else{
-//     console.log(false)
-//   }
+// let a =  ["Я", "изучаю", "JavaScript"]
+// a.forEach(console.log)
+
+// let a = ['бананы', 'апельсины', 'киви', 'арбуз', 'манго', 'киви',]
+// let col = 0
+// for(let i = 0; i < a.length; i++){
+//     if(col > 0){
+//          col = a.indexOf('киви', i)
+//     }
+//     console.log(col)
 // }
-// checkSpam('buy ViAgRA now')
-// checkSpam('free xxxxx') 
-// checkSpam("innocent rabbit") 
 
 
-
-// function truncate(str, maxlenght){
-//   console.log(str.substring(0, maxlenght) + '...')
+let users = [
+    {id: 1, name: "Вася"},
+    {id: 2, name: "Петя"},
+    {id: 3, name: "Маша"}
+  ]
   
-// }
-// truncate('вот,кошуео аврашы о вощупоу пулкотул уптклвып ыкапм')
+  let user = users.find(item => item.id == 1)
 
-let style = ['джас', 'блюз']
-style.push('рок-н-ролл')
-
-console.log(style)
+ console.log(user.name)//Вася
