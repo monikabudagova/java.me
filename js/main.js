@@ -1,54 +1,28 @@
-// let arr = []
+let car = {
+  auto: 'марка',
+  model: 'модель',
+  year: 'год',
+  speed:'26'
+}
+function hiv(car) {
+  console.log(`прозводитель ${car.auto}, модель${car.model}, год${car.year}`)
 
-// function  sumInput() {
-//     while (true) {
-//         let value = prompt('')
-//         if(value == null) {
-//             break
-//         } else if (isFinite(value)) {
-//             arr.push(value)
-//         }else break
-//     }
-// }
-
-// sumInput()
-
-// splice
-
-// let arr = ["Я", "изучаю", "JavaScript"]
-
-// arr.splice(0, 3, "Давай", "танцевать", "JavaScript")
-
-// console.log( arr )
-
-// let a =  ["Я", "изучаю", "JavaScript"]
-
-// let b = a.concat()
-
-// b[0] = 'мы'
+}
+let calculator = new calculator()
+calculator.read()
+console.log(calculator.sum())
+console.log(calculator.nul())
+// let s = +prompt('время')
+function time(s) {
+  km2 = +prompt('расстояние')
+  m = km2 *1000 
+  mh = car.speed * 1000 / 3600
 
 
-// console.log(a)
+  t = s / mh
+  h = s - (h - 60)
+console.log(`${time} сколько часов`)
+}
 
-// let a =  ["Я", "изучаю", "JavaScript"]
-// a.forEach(console.log)
-
-// let a = ['бананы', 'апельсины', 'киви', 'арбуз', 'манго', 'киви',]
-// let col = 0
-// for(let i = 0; i < a.length; i++){
-//     if(col > 0){
-//          col = a.indexOf('киви', i)
-//     }
-//     console.log(col)
-// }
-
-
-let users = [
-    {id: 1, name: "Вася"},
-    {id: 2, name: "Петя"},
-    {id: 3, name: "Маша"}
-  ]
-  
-  let user = users.find(item => item.id == 1)
-
- console.log(user.name)//Вася
+hiv(car)
+time(car)
