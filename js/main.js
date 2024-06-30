@@ -1,28 +1,38 @@
-let car = {
-  auto: 'марка',
-  model: 'модель',
-  year: 'год',
-  speed:'26'
+function addFood(a){
+  let newFood = prompt("продукт ")
+  let newCol = +prompt("сколько ")
+
+  a.forEach(function(item, i, a){
+      for (var key in item){
+
+          if (item[key] == newFood){ 
+              item[weigth] = item.weigth[key] + newCol                                                                     
+              console.log(item[weigth])
+              
+              }
+      }               
+  })
 }
-function hiv(car) {
-  console.log(`прозводитель ${car.auto}, модель${car.model}, год${car.year}`)
+      
 
-}
-let calculator = new calculator()
-calculator.read()
-console.log(calculator.sum())
-console.log(calculator.nul())
-// let s = +prompt('время')
-function time(s) {
-  km2 = +prompt('расстояние')
-  m = km2 *1000 
-  mh = car.speed * 1000 / 3600
+  let listBuy = [{
+      name : "kiwi",
+      weigth: 2,
+      status: "yes",
+  },
+  {    
+      name : "milk",
+      weigth: 1,
+      status: "no",
+      },
+      {    
+          name : "banana",
+          weigth: 6,
+          status: "no",
+      }
+] 
 
 
-  t = s / mh
-  h = s - (h - 60)
-console.log(`${time} сколько часов`)
-}
-
-hiv(car)
-time(car)
+console.log(addFood)
+console.log(listBuy)
+  addFood(listBuy)
