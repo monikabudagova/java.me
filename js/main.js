@@ -1,38 +1,60 @@
-function addFood(a){
-  let newFood = prompt("продукт ")
-  let newCol = +prompt("сколько ")
+// function Food(a){
+//   // let hic = check.filter(hic => !hic2)//не куплен
+//   // let hic2 = check.filter(hic => hic2)//куплен
 
-  a.forEach(function(item, i, a){
-      for (var key in item){
+//   if(a.col =='не куплен')
+//   return -1;
+//   if(a.col =='куплен')
+//   return 1;
+//   console.log(a)
 
-          if (item[key] == newFood){ 
-              item[weigth] = item.weigth[key] + newCol                                                                     
-              console.log(item[weigth])
-              
-              }
-      }               
-  })
+// }
+// function Product(hic) {
+//   hic.sort ((a,b) => a.status - b.status).revers().map(function (item){
+//     if(item.status === true){
+//       console.log(item.name +'куплен')
+//     }else{
+//       console.log(item.name +'не куплен')
+//     }
+// })
+// }
+// let list = [
+//   {
+//     name : "kiwi",
+//     col: 7,
+//     status: "true",
+//   },
+//   {    
+//     name : "milk",
+//     col: 2,
+//     status: "false",
+//   },
+//   {
+//     name : "banana",
+//     col: 4,
+//     status: "true",
+//   }
+// ] 
+// // Food(list)
+// Product(list)
+
+
+
+
+
+// function camelize(str) {
+//   console.log(str.split('-').join(''))
+// }
+
+// camelize('background-Color')
+
+
+
+function unique(arr) {
+  for(let str of arr){
+    
+  }
 }
-      
+let strings =['кришня','кришня','харе','харе','харе','харе','кришня','кришня',';-0',]
 
-  let listBuy = [{
-      name : "kiwi",
-      weigth: 2,
-      status: "yes",
-  },
-  {    
-      name : "milk",
-      weigth: 1,
-      status: "no",
-      },
-      {    
-          name : "banana",
-          weigth: 6,
-          status: "no",
-      }
-] 
-
-
-console.log(addFood)
-console.log(listBuy)
-  addFood(listBuy)
+console.log(unique(strings));
