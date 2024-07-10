@@ -21,10 +21,10 @@
 // console.log( sumSalaries(salaries) )
 
 
-let user = { name: "John", years: 30 };
+let user = { name: "John", years: 30 }
 
 // ваш код должен быть с левой стороны:
-let {name: name, year: age, isAdmin: isAdmin} = user
+let {name: name, year: age, isAdmin: isAdmin = false} = user
 
 console.log( name ) // John
 console.log(age ) // 30
