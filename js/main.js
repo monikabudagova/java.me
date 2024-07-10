@@ -1,11 +1,31 @@
-let map = new Map()
+// let str = 'dfkg fkg fnkji fhiuh  b'
 
-map.set("name", "John")
-
-let keys = Array.from(map.keys())
+// console.log(str.length)
 
 
-console.log(keys)
-// Error: keys.push is not a function
-// Ошибка: keys.push -- это не функция
-keys.push("more")
+
+// let salaries = {
+//     "John": 100,
+//     "Pete": 300,
+//     "Mary": 250
+//   }
+  
+//   function sumSalaries(obj){
+//     sum = 0
+
+//     for(let rub of Object.values(obj)) sum += rub{
+//         return rub
+//     }
+//   }
+
+// console.log( sumSalaries(salaries) )
+
+
+let user = { name: "John", years: 30 };
+
+// ваш код должен быть с левой стороны:
+let {name: name, year: age, isAdmin: isAdmin} = user
+
+console.log( name ) // John
+console.log(age ) // 30
+console.log( isAdmin ) // false
