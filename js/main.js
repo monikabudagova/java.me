@@ -1,31 +1,28 @@
-// let str = 'dfkg fkg fnkji fhiuh  b'
+// let tuday = new Date(2012, 1, 20, 3, 12)
+// console.log(tuday)
 
-// console.log(str.length)
-
-
-
-// let salaries = {
-//     "John": 100,
-//     "Pete": 300,
-//     "Mary": 250
+// let user = {
+//     name: "Василий Иванович",
+//     age: 35
 //   }
+// let str = JSON.stringify(user)
+// let prs = JSON.parse(str)
+// console.log(prs)
+
+
+let room = {
+    number: 23
+  }
   
-//   function sumSalaries(obj){
-//     sum = 0
+  let meetup = {
+    title: "Совещание",
+    occupiedBy: [{name: "Иванов"}, {name: "Петров"}],
+    place: room
+  }
+  
+  room.occupiedBy = meetup
+  meetup.self = meetup
 
-//     for(let rub of Object.values(obj)) sum += rub{
-//         return rub
-//     }
-//   }
-
-// console.log( sumSalaries(salaries) )
-
-
-let user = { name: "John", years: 30 }
-
-// ваш код должен быть с левой стороны:
-let {name: name, year: age, isAdmin: isAdmin = false} = user
-
-console.log( name ) // John
-console.log(age ) // 30
-console.log( isAdmin ) // false
+console.log(JSON.stringify(meetup, function replacer(key, value) {
+    return (key != "" && value == meetup) ? undefined : value;
+  }))
