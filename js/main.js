@@ -1,28 +1,34 @@
-// let tuday = new Date(2012, 1, 20, 3, 12)
-// console.log(tuday)
-
-// let user = {
-//     name: "Василий Иванович",
-//     age: 35
+// let grup = {
+//     1:{
+//       name: 'john',
+//       age: 25,
+//       city: 'new york'
+//     },
+//     2:{
+//       name: 'sara',
+//       age: 18,
+//       city: 'london'
+//     },
+//     3:{
+//       name: 'melik',
+//       age: 16,
+//       city: 'paris'
+//     }
 //   }
-// let str = JSON.stringify(user)
-// let prs = JSON.parse(str)
-// console.log(prs)
+//   arr.push(
+//     {
+//       name: 'masha',
+//       age: 14,
+//       city: 'volga'
+//     }
+//   )
 
+//   for(let{name, age, city} of arr){
+//     console.log(`имя: ${name},возраст:${age},город:${city}`);
+//   }
 
-let room = {
-    number: 23
-  }
-  
-  let meetup = {
-    title: "Совещание",
-    occupiedBy: [{name: "Иванов"}, {name: "Петров"}],
-    place: room
-  }
-  
-  room.occupiedBy = meetup
-  meetup.self = meetup
-
-console.log(JSON.stringify(meetup, function replacer(key, value) {
-    return (key != "" && value == meetup) ? undefined : value;
-  }))
+function sumOfNumbers(...arr) {
+  let sum = 0 
+  for()
+}
+console.log( sum(1, 2, 3, 4, 5) )
