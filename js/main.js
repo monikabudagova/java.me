@@ -1,32 +1,42 @@
-// function textNumber(number) {
-//     let first = ['Один', 'Два', 'Три', 'Четыре', 'Пять', 'Шесть', 'Семь', 'Восемь', 'Девять'];
-//     let second = ['Десять', 'Одинадцать', 'Двенадцать', 'Тринадцать', 'Четырнадцать', 'Пятнадцать', 'Шестнадцать', 'Семьнадцать', 'Восемьнадцать', 'Девяднадцать', 'Двадвать']
-//     let third = ['Двадцать', 'Тридцать', 'Сорок', 'Пятьдесят', 'Шестьдесят', 'Семьдесят', 'Восемьдесят', 'Девяносто']
-//     if (number > 0 && number <= 9) {
-//       return first[number - 1]
-//     }
-//     if (number >= 10 && number <= 20) {
-//       return second[number - 10]
-//     }
-//     if (number > 20 && number <= 99) {
-//       let str = `${number}`
-//       str = str.split('')
-//       let firstNumber = str[0]
-//       let secondNumber = str[1]
-//       return `${third[firstNumber - 2]} ${first[secondNumber - 1]}`
-//     }
+// function printNumbers(from, to){
+//   let current = from
+// setTimeout(function go (){
+//     console.log(current) 
+//   if(current){
+//     clearInterval(i)
 //   }
-// console.log(textNumber(7))
-// console.log(textNumber(20))
-// console.log(textNumber(55))
+//   }
+//   num++;1000)
 
 
-function CamelCase(str) {
-    if (str in document.body.style) {
-      return str.replace(/-(\w)/g, (s, l) => l.toUpperCase());
-    } else {
-      throw new TypeError("Переданная строка не является CSS-селектором");
-    }
+//   console.log(from)
+
+// }
+// printNumbers(5, 6)
+
+// console.log(Boolean(Math.floor(Math.random*3)))
+
+
+
+
+
+
+
+function work(a, b) {
+  alert( a + b )// произвольная функция или метод
+}
+
+work = spy(work)
+
+work(1, 2)// 3
+work(4, 5)// 9
+
+for (let args of work.calls) {
+  console.log( 'call:' + args.join() ) // "call:1,2", "call:4,5"
+}
+
+function spy(func){
+  function hic(){
+    
   }
-  import * as lodash from "https://cdn.skypack.dev/lodash@4.17.21";
-console.log(lodash.camelCase('my-short-string'))
+}
