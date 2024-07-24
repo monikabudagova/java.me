@@ -1,42 +1,56 @@
-// function printNumbers(from, to){
-//   let current = from
-// setTimeout(function go (){
-//     console.log(current) 
-//   if(current){
-//     clearInterval(i)
-//   }
-//   }
-//   num++;1000)
-
-
-//   console.log(from)
-
+// let animal = {
+//   jumps: null
 // }
-// printNumbers(5, 6)
 
-// console.log(Boolean(Math.floor(Math.random*3)))
+// let rabbit = {
+//   __proto__: animal,
+//   jumps: true
+// }
+
+// console.log( rabbit.jumps )// true (1)
+
+// delete rabbit.jumps
+
+// console.log(  rabbit.jumps ) // null (2)
+
+// delete animal.jumps
+
+// console.log( rabbit.jumps ) // undefined (3)
+
+// let head = {
+//   glasses: 1
+// }
+
+// let table = {
+//   pen: 3,
+//   __proto__: head
+// }
+
+// let bed = {
+//   sheet: 1,
+//   pillow: 2,
+//   __proto__: table
+// }
+
+// let pockets = {
+//   money: 2000,
+//   __proto__: bed
+// }
+// console.log(pockets.pen)
+// console.log(bed.glasses)
+// console.log(table.money)
+
+// let obj2 = new obj.constructor()
+// let obj = obj
+// function obj(hic){
+//   this.hic = hic
+// }
+// console.log(obj2.hic)
 
 
-
-
-
-
-
-function work(a, b) {
-  alert( a + b )// произвольная функция или метод
+let obj2 = new obj.constructor()
+let obj = obj
+function obj(hic){
+  this.hic = hic
 }
-
-work = spy(work)
-
-work(1, 2)// 3
-work(4, 5)// 9
-
-for (let args of work.calls) {
-  console.log( 'call:' + args.join() ) // "call:1,2", "call:4,5"
-}
-
-function spy(func){
-  function hic(){
-    
-  }
-}
+console.log(obj2.hic)
