@@ -1,56 +1,36 @@
-// let animal = {
-//   jumps: null
+// let hamster = {
+//   stomach: [],
+
+//   eat(food) {
+//     this.stomach = [food]
+//   }
 // }
 
-// let rabbit = {
-//   __proto__: animal,
-//   jumps: true
+// let speedy = {
+//    __proto__: hamster
 // }
 
-// console.log( rabbit.jumps )// true (1)
-
-// delete rabbit.jumps
-
-// console.log(  rabbit.jumps ) // null (2)
-
-// delete animal.jumps
-
-// console.log( rabbit.jumps ) // undefined (3)
-
-// let head = {
-//   glasses: 1
+// let lazy = {
+//   __proto__: hamster
 // }
 
-// let table = {
-//   pen: 3,
-//   __proto__: head
-// }
 
-// let bed = {
-//   sheet: 1,
-//   pillow: 2,
-//   __proto__: table
-// }
-
-// let pockets = {
-//   money: 2000,
-//   __proto__: bed
-// }
-// console.log(pockets.pen)
-// console.log(bed.glasses)
-// console.log(table.money)
-
-// let obj2 = new obj.constructor()
-// let obj = obj
-// function obj(hic){
-//   this.hic = hic
-// }
-// console.log(obj2.hic)
+// speedy.eat("apple")
+// console.log( speedy.stomach )
 
 
-let obj2 = new obj.constructor()
-let obj = obj
-function obj(hic){
-  this.hic = hic
+// console.log( lazy.stomach )
+
+function printNumbers(from, to) {
+  let current = from
+
+  let timerId = setInterval(function() {
+    console.log( current)
+    if (current == to) {
+      clearInterval(timerId)
+    }
+    current++
+  }, 1000)
 }
-console.log(obj2.hic)
+
+printNumbers(5, 10)
