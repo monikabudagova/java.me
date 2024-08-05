@@ -1,24 +1,19 @@
-// function delay(ms) {
-//   return new Promise(resolve => setTimeout(resolve, ms))
-// }
+let value = prompt('введите ваш логин на github')
+let url = 'https://api.github.com/users/' + value 
 
-// delay(10000).then(() => console.log('выполнилось через 3 секунды'))
+fetch(url)
+.then(response => response.json())
+.then(obj => {
+  let date = new Date(obj.create_at)
 
+  const year = date.getFullYear
+  const month = date.getMonth
+  const day = date.getDate
 
-class Animal {
+  console.log()
+  })
 
-  constructor(name) {
-    this.name = name;
-  }
+console.log(
+  `зарегистрирован ${day}-${month}-${year} года`
+)
 
-}
-
-class Rabbit extends Animal {
-  constructor(name) {
-    super(name);
-    this.created = Date.now();
-  }
-}
-
-let rabbit = new Rabbit("Белый кролик")
-console.log( rabbit.name)
