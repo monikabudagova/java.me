@@ -1,19 +1,35 @@
-let value = prompt('введите ваш логин на github')
-let url = 'https://api.github.com/users/' + value 
+// async function f(login){
+//   fetch(`https://api.github.com/users/${login}`)
+//   .then(response => response.json())
+//   .then(obj => {
+//     const date = new Date(obj.created_at)
+//     const month = [
+//       "январь", "февраль","март","апрель","май","июнь","июль","август","сентябрь","октябрь","ноябрь","декабрь"
+//     ]
+//     console.log(
+//       `${date.getDate()} ${month[date.getMonth()]} ${date.getFullYear()}`
+//     );
+//   })
+// }
+// f(prompt(loginGitHub))
 
-fetch(url)
-.then(response => response.json())
-.then(obj => {
-  let date = new Date(obj.create_at)
+function* generateSequence() {
+  yield 1;
+  yield 2;
+  return 3;
+}
 
-  const year = date.getFullYear
-  const month = date.getMonth
-  const day = date.getDate
+let generator = generateSequence()
 
-  console.log()
-  })
+let one = generator.next()
+let two = generator.next()
+let three = generator.next()
 
-console.log(
-  `зарегистрирован ${day}-${month}-${year} года`
-)
+console.log(JSON.stringify(one))
+console.log(JSON.stringify(two))
+console.log(JSON.stringify(three))
+
+for(let value of generator){
+  console.log(value)
+}
 
