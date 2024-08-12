@@ -1,23 +1,9 @@
-// let value = prompt('введите ваш логин на github')
-// let url = 'https://api.github.com/users/' + value 
+const result = document.querySelector('#result') // div с result
+result.innerHTML = 'ПРИВЕТ'
 
-// // delay(10000).then(() => console.log('выполнилось через 3 секунды'))
-// fetch(url)
-// .then(response => response.json())
-// .then(obj => {
-//   let date = new Date(obj.create_at)
+let ul =  document.createElement('ul')
+let li =  document.createElement('li')
 
-//   const year = date.getFullYear
-//   const month = date.getMonth
-//   const day = date.getDate
-
-// class Animal {
-//   console.log()
-//   }})
-
-function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
-
-delay(3000).then(() => console.log('выполнилось через 3 секунды'))
-
+result.append(ul)
+ul.append(li)
+ul.innerHTML ='список'
